@@ -7,7 +7,12 @@ export default defineConfig({
     globals: true,
     setupFiles: ["./setup.ts"],
     coverage: {
-      exclude: ["**/**/index.ts", "src/example"],
+      exclude: [
+        "**/**/index.ts",
+        "node_modules",
+        "docs/.vitepress/config.mts",
+        "docs/.vitepress/cache",
+      ],
     },
   },
 });

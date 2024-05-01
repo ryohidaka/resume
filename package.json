@@ -4,12 +4,12 @@
   "description": "職務経歴書",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --emptyOutDir false",
-    "preview": "vite preview",
-    "prepare": "husky install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "format": "npx prettier . --write",
     "test": "VITEST_MIN_THREADS=6 VITEST_MAX_THREADS=6 vitest run --passWithNoTests",
-    "coverage": "vitest run --coverage",
-    "format": "npx prettier . --write"
+    "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "vite": "^5.2.11",
     "vite-plugin-dts": "^3.9.0",
     "vite-tsconfig-paths": "^4.3.2",
+    "vitepress": "^1.1.4",
     "vitest": "^1.5.2"
   },
   "lint-staged": {
