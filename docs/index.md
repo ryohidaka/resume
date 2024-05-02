@@ -1,6 +1,7 @@
 <script setup>
   import { AGE, EXPERIENCE_YEARS }from "../src/utils"
-  
+
+  import DownloadButton from "../src/components/DownloadButton.vue"
   import LastUpdated from "../src/components/LastUpdated.vue"
   import Project from "../src/components/Project.vue"
   import Skills from "../src/components/Skills.vue"
@@ -70,3 +71,6 @@
 | [Misskey](https://misskey-hub.net/ja/) | 分散型 SNS プラットフォーム          | デザイン修正<br/>Issue 対応<br/>ドキュメント改修 |
 | [WXT](https://wxt.dev/)                | ブラウザ拡張機能開発用フレームワーク | ドキュメント改修                                 |
 | [Plasmo](https://www.plasmo.com/)      | ブラウザ拡張機能開発用フレームワーク | ドキュメント改修                                 |
+
+<!-- PDFダウンロードボタン -->
+<DownloadButton />
