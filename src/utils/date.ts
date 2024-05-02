@@ -1,6 +1,9 @@
 // 現在の日付を取得する。
 const currentDate = new Date();
 
+// 現在の年を取得する。
+const currentYear = currentDate.getFullYear();
+
 /**
  * 日付を日本時間の日付整数に変換する。
  * @param {Date} date - 変換する日付
@@ -36,3 +39,14 @@ const getAge = (): number => {
 };
 
 export const AGE = getAge();
+
+/**
+ * 経験年数を取得する。
+ * @return {number} 経験年数
+ */
+const getExperienceYears = (): number => {
+  // 2020年からの経験年数を計算する。
+  return currentYear - 2020;
+};
+
+export const EXPERIENCE_YEARS = getExperienceYears();
