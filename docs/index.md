@@ -53,3 +53,7 @@
 ### iOS モバイルアプリケーション
 
 <Skills :skills="skillStacks.iOS" />
+
+## 資格
+
+- 普通自動車第一種運転免許
