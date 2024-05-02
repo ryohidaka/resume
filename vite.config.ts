@@ -13,6 +13,7 @@ export default defineConfig({
         "docs/.vitepress/config.mts",
         "docs/.vitepress/cache",
         "docs/.vitepress/data",
+        "docs/.vitepress/vitepress-pdf.config.ts",
       ],
     },
   },

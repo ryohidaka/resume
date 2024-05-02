@@ -1,0 +1,42 @@
+@media print {
+  .VPNav,
+  .VPLocalNav,
+  .VPDocFooter,
+  .header-anchor,
+  #download {
+    display: none !important;
+  }
+
+  .vp-doc :is(h1, h2, h3, p, li) {
+    margin: 0;
+    padding: 0;
+  }
+
+  .vp-doc :is(h1, h2, h3, p, li, th, td) {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .vp-doc :is(h2, h3) {
+    page-break-after: avoid;
+  }
+
+  .vp-doc h1 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .vp-doc h2 {
+    font-size: 12px;
+    line-height: 24px;
+    border-top: 0px;
+    margin-top: 1rem;
+  }
+
+  .vp-doc h3 {
+    font-size: 11px;
+    line-height: 22px;
+    margin-top: 1rem;
+  }
+}

@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "vite",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "npm run docs:pdf && vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "docs:pdf": "press-export-pdf export docs",
     "format": "npx prettier . --write",
     "test": "VITEST_MIN_THREADS=6 VITEST_MAX_THREADS=6 vitest run --passWithNoTests",
     "coverage": "vitest run --coverage"
@@ -34,6 +35,7 @@
     "vite-plugin-dts": "^3.9.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitepress": "^1.1.4",
+    "vitepress-export-pdf": "^1.0.0-beta.0",
     "vitest": "^1.5.2"
   },
   "lint-staged": {

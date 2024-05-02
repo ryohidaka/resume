@@ -25,3 +25,4 @@ dist-ssr
 
 coverage
 docs/.vitepress/cache
+docs/public/resume.pdf
