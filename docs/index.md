@@ -3,9 +3,11 @@
   
   import LastUpdated from "../src/components/LastUpdated.vue"
   import Project from "../src/components/Project.vue"
-
+  import Skills from "../src/components/Skills.vue"
+  
   // データ
   import { data as projects } from './.vitepress/data/project.data.ts'
+  import { data as skillStacks } from './.vitepress/data/skill.data.ts'
 </script>
 
 # 職務経歴書
@@ -37,3 +39,17 @@
 
 <!-- プロジェクト経歴 -->
 <Project v-for="(project, index) in projects" :key="index" :project="project" />
+
+## 技術スタック
+
+### WEB フロントエンド
+
+<Skills :skills="skillStacks.web.frontend" />
+
+### WEB バックエンド
+
+<Skills :skills="skillStacks.web.backend" />
+
+### iOS モバイルアプリケーション
+
+<Skills :skills="skillStacks.iOS" />
