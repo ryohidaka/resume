@@ -12,6 +12,7 @@ export default defineConfig({
         "node_modules",
         "docs/.vitepress/config.mts",
         "docs/.vitepress/cache",
+        "docs/.vitepress/data",
       ],
     },
   },

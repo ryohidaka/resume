@@ -2,6 +2,10 @@
   import { AGE, EXPERIENCE_YEARS }from "../src/utils"
   
   import LastUpdated from "../src/components/LastUpdated.vue"
+  import Project from "../src/components/Project.vue"
+
+  // データ
+  import { data as projects } from './.vitepress/data/project.data.ts'
 </script>
 
 # 職務経歴書
@@ -21,3 +25,15 @@
 新卒入社以来、{{ EXPERIENCE_YEARS }}年間にわたり WEB アプリケーションエンジニアとして業務を行ってまいりました。その間、WEB のフロントエンドとバックエンドの両方を経験し、幅広い知識と技術を身につけることができました。 <br />
 さらに、クラウドサービスを用いたインフラ設計も担当し、システム全体の設計と運用に関する深い理解を得ることができました。 <br />
 昨年からは新たな挑戦として、iOS 向けのモバイルアプリの開発にも従事しており、多様なプラットフォームに対応する能力を磨いています。
+
+## 職務経歴
+
+[**フェンリル株式会社**](https://www.fenrir-inc.com/)
+
+- 事業内容: アプリケーション・ソフトウェアシステム開発
+- 従業員数: 712 名
+- 資本金: 1 億円
+- 上場: 未上場
+
+<!-- プロジェクト経歴 -->
+<Project v-for="(project, index) in projects" :key="index" :project="project" />
