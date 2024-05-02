@@ -1,8 +1,13 @@
 <script setup>
   import { AGE, EXPERIENCE_YEARS }from "../src/utils"
+  
+  import LastUpdated from "../src/components/LastUpdated.vue"
 </script>
 
 # 職務経歴書
+
+<!-- 最終更新日 -->
+<LastUpdated />
 
 ## 基本情報
 
